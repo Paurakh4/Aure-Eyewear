@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Listing Page - Aure Eyewear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="w-full bg-white dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+<div class="mx-auto flex max-w-7xl items-center justify-between whitespace-nowrap px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Aure Eyewear</h2>
+</div>
+</div>
+<div class="hidden md:flex flex-1 items-center justify-center">
+<div class="flex items-center gap-9">
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Men</a>
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Women</a>
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Collections</a>
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">About</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end items-center gap-3">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-gray-100 dark:bg-gray-800 items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-gray-100 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-gray-100 dark:bg-gray-800 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4GMcp4MvQ_jSpGdk4_meMVub58I1I7UeEmCsknqohLTebCcwioAJn1nk3caYns1e3atQ_eg9AoqXi4lMVS81XLZozs9wbQgoa6HZO6JcX1VoNpkw-d5f_oDHB9hfla9x_5bMIwk7eJwiCUHa0yd36LmddiXjnxB7yQCuky79uAji73PuqWOgAMc3uaWjwHmcr8DcoEqXCGkwGyToA2oDR-yA7KGzVQeen8r8XjwXd9QoNN47QzME_u-uBuXVWL1xFlivoTr-OIc4");'></div>
+</div>
+</div>
+</header>
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+<!-- Sidebar -->
+<aside class="col-span-1">
+<div class="sticky top-24">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Filters</h2>
+<button class="text-sm font-medium text-primary hover:underline">Clear all</button>
+</div>
+<div class="space-y-6">
+<!-- Style Filter -->
+<div class="border-b border-gray-200 dark:border-gray-800 pb-6">
+<h3 class="font-semibold text-gray-900 dark:text-white mb-3">Style</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-3 cursor-pointer"><input checked="" class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Aviator</span></label>
+<label class="flex items-center space-x-3 cursor-pointer"><input class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Wayfarer</span></label>
+<label class="flex items-center space-x-3 cursor-pointer"><input class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Round</span></label>
+<label class="flex items-center space-x-3 cursor-pointer"><input class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Cat Eye</span></label>
+</div>
+</div>
+<!-- Brand Filter -->
+<div class="border-b border-gray-200 dark:border-gray-800 pb-6">
+<h3 class="font-semibold text-gray-900 dark:text-white mb-3">Brand</h3>
+<div class="space-y-2">
+<label class="flex items-center space-x-3 cursor-pointer"><input class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Ray-Ban</span></label>
+<label class="flex items-center space-x-3 cursor-pointer"><input checked="" class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Oakley</span></label>
+<label class="flex items-center space-x-3 cursor-pointer"><input class="form-checkbox h-4 w-4 rounded text-primary focus:ring-primary/50 border-gray-300 dark:border-gray-600 bg-transparent" type="checkbox"/><span class="text-sm text-gray-700 dark:text-gray-300">Persol</span></label>
+</div>
+</div>
+<!-- Color Filter -->
+<div class="border-b border-gray-200 dark:border-gray-800 pb-6">
+<h3 class="font-semibold text-gray-900 dark:text-white mb-3">Color</h3>
+<div class="flex flex-wrap gap-2">
+<button class="h-8 w-8 rounded-full bg-black border-2 border-primary ring-1 ring-primary ring-offset-2 ring-offset-background-light dark:ring-offset-background-dark"></button>
+<button class="h-8 w-8 rounded-full bg-gray-500 border-2 border-transparent hover:border-primary/50"></button>
+<button class="h-8 w-8 rounded-full bg-yellow-700 border-2 border-transparent hover:border-primary/50"></button>
+<button class="h-8 w-8 rounded-full bg-blue-500 border-2 border-transparent hover:border-primary/50"></button>
+<button class="h-8 w-8 rounded-full bg-green-500 border-2 border-transparent hover:border-primary/50"></button>
+</div>
+</div>
+<!-- Price Filter -->
+<div>
+<h3 class="font-semibold text-gray-900 dark:text-white mb-4">Price</h3>
+<div class="relative pt-1">
+<input class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer [&amp;::-webkit-slider-thumb]:appearance-none [&amp;::-webkit-slider-thumb]:h-4 [&amp;::-webkit-slider-thumb]:w-4 [&amp;::-webkit-slider-thumb]:rounded-full [&amp;::-webkit-slider-thumb]:bg-primary" max="500" min="50" step="5" type="range" value="275"/>
+<div class="flex justify-between text-xs text-gray-600 dark:text-gray-400 mt-2">
+<span>$50</span>
+<span>$500</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<div class="col-span-1 lg:col-span-3">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 mb-4">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm font-medium leading-normal" href="#">Home</a>
+<span class="text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal">/</span>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary text-sm font-medium leading-normal" href="#">Men</a>
+<span class="text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal">/</span>
+<span class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Sunglasses</span>
+</div>
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-4 items-center mb-6">
+<div class="flex flex-col">
+<h1 class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Men's Sunglasses</h1>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">Browse our curated selection of high-quality eyewear.</p>
+</div>
+</div>
+<!-- Chips and Sort -->
+<div class="flex items-center justify-between mb-6">
+<div class="flex gap-3 overflow-x-auto pb-2">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 pl-4 pr-3 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Style</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 pl-4 pr-3 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Brand</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 pl-4 pr-3 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Color</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 pl-4 pr-3 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Sort by: Price - Low to High</p>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Ray-Ban Aviator sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhqfeu8sLFMkRiL-z8xbHj4OS4txQ3WLXO0kK8IS_waMKvx5BnYpQhFhHsZ01uRvf559XdGgvRWGuA_mmbSL4UeFDHtLZE59NeRC30HATJOKlG7jbFyPfdb1zJ50WxaGcF7NtZYuXom4pA4EFMU5PKzwPhWLSbbZDz11cXam0COEodF9zaN3JFLzFDRbaNGzNPE8ebcLaeRPFSgoq60kJhhS1o5o7yuOteqK8tdFhkQheFAQ3srmxdYj8GJC3mh1XFei_QBuMPUow");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Ray-Ban Aviator</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$154.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Oakley Holbrook sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASYC0zMg9HkwKGfFsPuQ17pS3XvpirmC1AJDYkQ2upp7zJsSCvdPnS4kRUSllZBXmD4G9P7GLIpfnBjPyEtlCHFd6JzSTvDNgqiPxHMQPmvN38QEgaiRSyVb21B0vPT-GX4Rc4uWsS77iSSrnPN43zSRtZg3fXleNaaVUTxvdYzGZkmcbpxQKhUflU0xqyN9IU2PkiBYIZs_Y-9WEucPH2p4sENbS03u547tkJbeh8sX4meppBH-t2_fvTY_DLvkh5b_N77hzKgsw");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Oakley Holbrook</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$146.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Persol 714 sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAjc5LySkLAQn37f2k1PmMX3z0Ein2strMhsABh90byhE1Mcf1PFFpas5mZfrx4t_HfxM8s9kMqGcfNLdQriJuiJo6ISod2ox68prUIiHotL1DCf8BisTd-Vlkdh6t--_isP81Wh1cn_IngBO4nG5M2m_IniE1W0KJtLb1wgwGZAWygQV_hzTq8T7sbH9_aBMYEqGT0aO3IkDxleWhxxH-4B0ddYJXo3UsukpsrS0Gx1DU-djMS8TxnCuVthPQeapiFCYlsNmu64qM");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Persol 714</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$360.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Warby Parker Ames sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc2F7p8lCnA0eEzlnS6B25rUakqS6n_sD6ifFajdUvX1vDSbddFDRLNRW-eDLA0RrKPIPbCVFuic46srb-IxinmQ_gACuYHihNkijyPY9a3-WXPPOHZvq7C__8n2AOixWSMMCvvC-oKVlMxR3ksxhj2Ec84MbnuviLtOuoEFeiQGc0TkM_Q4d8K9Ol5VpfH_HizPwctUB-Zzu4AbntEJHO60tcamS4nHCgmyFFH9cgV6pKFT7U3HUecUqPYgAzUU0AWRhuaGP_rAs");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Warby Parker Ames</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$95.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Tom Ford Snowdon sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTlrYQuiVN12q8arSv-_AnvTU7fp5Klv6cglSNzRqeWEq8SbGUBiUz6BKkgy7y7As92ypcgpN4lx61nPWxj6cQNV21uZgSESRmEKItCm9JQJ95aAYkrPs7xixfctInR0mC8MVj18bWgtp7Ua5P0xkbIe1pWr71JBimlR0VwuTH2MVUg0JYtozKuO-gdhT-21KBEShsxb48wF2w5qMRprohaRXG62BZ33oVs4Nx3rcpjOL5if_jvRM40Z3pUXrzXo_GnRZ_n-J3NnU");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Tom Ford Snowdon</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$405.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Gucci GG0026O eyeglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDAjoX59sE9fd4Y4PpYTncd-W61a3MgDahzJP6B_yn7syzbdqs8H-ytwTw-Vxq_jVnLE-xGjyjX0ODyO_XKxNbd7A0J3yIQqbLQr-56dOWlXcxqbqXCpsZ-zaFToE1mf11PElVjiYY0OWU-IENKPaWzMyhxth3UsoaXs6ZEkF0qp5LmFom4aAUocjrOqtzICHccXKBePGafTV35dx8j0cNhKhjiKqm1WpSibfJ-dZ8mWQFKQDvreIMUdgYWJV5tuNL1KR80hUExcsc");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Gucci GG0026O</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$280.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Prada PR 17WS sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgpinvYA_olJBn40qtTtjG8KPnKUhwXz5J2cueekk-NACbtOw9s665KObySTX-lo-zy_J0s4AFKH4-B6zgXmxaoNdOTB5b5ZOqZ7tAqtLwueeOdD_PP9xV4a6gWaAitcCiBNGAJB2qS4qGIutqTWr3eNtyFEkGQwZZgvPWJt957uHUtwazmjM1ZdoS5TtaGZzEzWGkmJtfBuJYQ_I8psuXuBhjqDDkGwSzlAt8AO-zgyGHu3t62EkHuGH68ODQi4MvkI7FOifCKU0");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Prada PR 17WS</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$320.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Maui Jim Red Sands sunglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAB4USZ8_2W-LmD7_sFg2uvCMcc1-y-KIZ_hUM3H8ug9Pi660zWv40C0UABUuiI7eRfqbCmfIGgM3wdyW7tuoCKikICQQ6aM56t9oVXH2loTjqi53GfvyiSwKD_VMUJ7x1C2qOQorgLlCb87F4Jvbs-9YiDdkO8Eoi3yfOTsNJSyoOXyeAu8ku95N7vPfLyEV68iuluftyYrzDm89JvS2k36OlMtc55t5NJr69dtd-6Eo0auwzfAFAb6-IF75vGHqkkgOO0AcOPupA");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Maui Jim Red Sands</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$229.00</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transform transition-transform duration-300 group-hover:scale-105" data-alt="Oliver Peoples Gregory Peck eyeglasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdnHNN5mFLDXlZbtenOe6kTY-JHhz67l7eCEnytann5W-C7JO3k_fEoTh730jxLZvq0WHRD9swlrxeiZo9UeNsMcdYBg3wjudZYBDmqdjCu47PGz1CsRLhnaCvvPpOTlIp3j8h6o5RK5Ng7lHsPUTbuVVOM31yQVJcGZfeURzH41tw1XS5eiCCeSiL6XXzcJtTFvAxWdKpT3coFR6DMGltnywk8zS-ObLhrsHkTg25bninyqir8hH_XG-p_l9fLOSWy3tHmSiukW0");'></div>
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">Oliver Peoples Gregory Peck</p>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">$381.00</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center mt-12">
+<nav class="flex items-center gap-2">
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-xl">chevron_left</span>
+</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-primary text-white text-sm font-bold">1</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium">2</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium">3</button>
+<span class="text-gray-500 dark:text-gray-400">...</span>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 text-sm font-medium">8</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-xl">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

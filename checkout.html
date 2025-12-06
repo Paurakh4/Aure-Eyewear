@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout Page - Aure Eyewear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] dark:border-b-[#2c343a] px-4 sm:px-6 lg:px-10 py-3">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Aure Eyewear</h2>
+</div>
+<div class="flex items-center gap-2 text-sm font-bold leading-normal tracking-[0.015em] text-[#111418] dark:text-white">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>Secure Checkout</span>
+</div>
+</header>
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+<div class="flex flex-col gap-8">
+<div class="flex flex-wrap gap-2">
+<span class="text-primary text-base font-medium leading-normal">Shipping</span>
+<span class="text-[#617589] dark:text-gray-400 text-base font-medium leading-normal">/</span>
+<a class="text-[#617589] dark:text-gray-400 text-base font-medium leading-normal" href="#">Payment</a>
+<span class="text-[#617589] dark:text-gray-400 text-base font-medium leading-normal">/</span>
+<span class="text-[#617589] dark:text-gray-400 text-base font-medium leading-normal">Review</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex flex-wrap justify-between items-baseline gap-3">
+<p class="text-[#111418] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Shipping information</p>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col w-full">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">Email address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="Enter your email address" type="email" value=""/>
+</label>
+<div class="flex flex-col sm:flex-row w-full items-end gap-4">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">First name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="Enter first name" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">Last name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="Enter last name" value=""/>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="123 Main Street" type="text" value=""/>
+</label>
+<div class="flex flex-col sm:flex-row w-full items-end gap-4">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">City</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="San Francisco" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">Country</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="United States" value=""/>
+</label>
+</div>
+<div class="flex flex-col sm:flex-row w-full items-end gap-4">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">State / Province</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="California" value=""/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111418] dark:text-gray-300 text-base font-medium leading-normal pb-2">Postal Code</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-0 border border-[#dbe0e6] dark:border-gray-600 bg-white focus:border-primary dark:focus:border-primary h-14 placeholder:text-[#617589] p-[15px] text-base font-normal leading-normal" placeholder="94103" value=""/>
+</label>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-6">
+<a class="text-[#617589] dark:text-gray-400 font-medium hover:text-primary dark:hover:text-primary" href="#">Return to cart</a>
+<button class="flex items-center justify-center rounded-lg h-12 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] px-6 hover:opacity-90 transition-opacity">
+<span>Continue to Payment</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 lg:p-8 rounded-xl border border-gray-200 dark:border-gray-700 h-fit">
+<h3 class="text-xl font-bold text-[#111418] dark:text-white mb-6">Order Summary</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<img class="w-20 h-20 object-cover rounded-lg" data-alt="A pair of stylish sunglasses with a tortoiseshell frame resting on a textured surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYKRqvR13Tz__E_KSxeIHMM2Gz-VDLSuYzIBD4S3K9TB7fRI21XoMZqxvNgglLeQFJTEvlnt3jDhQVOMy7Sr664D6FN--6p_HXdxRSY7i9IQcUfFKo284j2brAchunSCMRbaWGA_Av54r7X78DxJcrReSHVk5XzaxbPi0WUTU8R3A6hQXZ4MptN647ZlRaPmIpPGWIEMn7rLFZemPrcqH9E-Lg6XEIPrDh7H5qi27V2yGh7bC1uOz27GGpWrWJzwARVHMSDazXJPE"/>
+<div class="flex-grow">
+<p class="font-medium text-[#111418] dark:text-white">Classic Tortoise</p>
+<p class="text-sm text-[#617589] dark:text-gray-400">Quantity: 1</p>
+</div>
+<p class="font-medium text-[#111418] dark:text-white">$149.00</p>
+</div>
+<div class="flex items-center gap-4">
+<img class="w-20 h-20 object-cover rounded-lg" data-alt="A pair of modern black aviator sunglasses placed on a reflective surface, capturing the sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz_RQW5AFvq9I9L4f1IbKIS0ke-TodI6V05HVVIsa0dWSbiRArRF4Eh3-X7J1PrAoOEXAuB3JngqqpRUU_d4aqN33g42kO2nijvgZJkJGsQDlY_5JbYxfd-zvzGLvQeASbLV9JW7CRO69p7iqapdza6jaDtmTOYjZWMldjc0rAMPD_SDCPn6uemi1Xr9Y31zO8ChlX5YAdsDQBK4x7b6SvSeg13-2B08qV1i_2vXYrMuEh9qbkTsNyYMEfa0rc8s-uxqsN1Kt8BSA"/>
+<div class="flex-grow">
+<p class="font-medium text-[#111418] dark:text-white">Midnight Aviator</p>
+<p class="text-sm text-[#617589] dark:text-gray-400">Quantity: 1</p>
+</div>
+<p class="font-medium text-[#111418] dark:text-white">$189.00</p>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 my-6"></div>
+<div class="space-y-3 text-base">
+<div class="flex justify-between text-[#617589] dark:text-gray-400">
+<span>Subtotal</span>
+<span class="text-[#111418] dark:text-white font-medium">$338.00</span>
+</div>
+<div class="flex justify-between text-[#617589] dark:text-gray-400">
+<span>Shipping</span>
+<span class="text-[#111418] dark:text-white font-medium">$5.00</span>
+</div>
+<div class="flex justify-between text-[#617589] dark:text-gray-400">
+<span>Taxes</span>
+<span class="text-[#111418] dark:text-white font-medium">$28.15</span>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 my-6"></div>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-[#111418] dark:text-white">Total</span>
+<span class="text-2xl font-bold text-[#111418] dark:text-white">$371.15</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-[#617589] dark:text-gray-400 border-t border-gray-200 dark:border-gray-800">
+<div class="flex justify-center gap-6">
+<a class="hover:text-primary dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary dark:hover:text-primary" href="#">Return Policy</a>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Detail Page - Aure Eyewear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B49A6E",
+                        "background-light": "#F5F5F1",
+                        "background-dark": "#1F1C19",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#312E2B",
+                        "text-primary-light": "#312E2B",
+                        "text-primary-dark": "#F5F5F1",
+                        "text-secondary-light": "#615C57",
+                        "text-secondary-dark": "#A19890"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-black/10 dark:border-white/10">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between whitespace-nowrap h-16">
+<div class="flex items-center gap-4">
+<div class="text-text-primary-light dark:text-text-primary-dark text-2xl">
+<span class="material-symbols-outlined">eyeglasses</span>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em]">Aure Eyewear</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary" href="#">Sunglasses</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Eyeglasses</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Collections</a>
+<a class="text-sm font-medium hover:text-primary" href="#">About</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-transparent text-text-primary-light dark:text-text-primary-dark hover:bg-black/5 dark:hover:bg-white/5 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-transparent text-text-primary-light dark:text-text-primary-dark hover:bg-black/5 dark:hover:bg-white/5 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-transparent text-text-primary-light dark:text-text-primary-dark hover:bg-black/5 dark:hover:bg-white/5 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<div class="mb-8">
+<div class="flex flex-wrap gap-2">
+<a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary" href="#">Home</a>
+<span class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+<a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary" href="#">Sunglasses</a>
+<span class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+<span class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">The Sorrento</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+<!-- Left Column: Image Gallery -->
+<div class="flex flex-col gap-4">
+<div class="aspect-square w-full bg-cover bg-center rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300" data-alt="Front view of The Sorrento sunglasses against a neutral background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxc55Om5CVn-tsCivZXQLm9yksH89vJh4wsDSVYAw5AvWuPGkFGiKbhw9D0UM5G6HOvSk6gNhhbMcONgufZF73AcM4WIaIwik7w8dh-pCU_jXMWHS8cL5qHZBXLmyZNVelemuEcvrm6oN1dT-PHityhbI_5Sy6cKWe3Ca1J0miD2yW1PdYrJINTbSn-0y7MpHfrdQHgZCSx925eqlFLnQlazPI2NifGWdSGtADiTt1gfKG2Cib5KOKpPMQR4RkLBTtA2Ke9JWw8EM');"></div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square w-full bg-cover bg-center rounded-lg cursor-pointer border-2 border-primary" data-alt="Thumbnail of front view." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYZpFEPq5XBjpr6FdM8AmRnAVYqwdYBNA1r1PUxb0x71ISmo88hnTsoL5B-cE56yZWcTMaaWvbUhu20GbXn4hIWZhCRCJEYGK2vWdfNkf5TeuGePDZrizJlYzwnBNLcqTyZ8TVsfI795ArMuO3f3LI2EYtv-e810aYj8hZmh8ambeHiDb_i88OAIalHT_kOfuzy7yhGyL4k2ikzhBfBOawkdJH52LXJIkYiDGN7fe0OW__RBArVs6ne00SAEtqRD7AZgLx1WWGWU8');"></div>
+<div class="aspect-square w-full bg-cover bg-center rounded-lg cursor-pointer opacity-70 hover:opacity-100" data-alt="Thumbnail of side view." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAadJ5BnsrRsX-gyrGOgWWjRoACo6xsiDNDuQjBjwqWeUe5TZkK1bixUwynLpwRj5i5HoPVKH1ORl8ps1V-z_QXquFe_BXoM6qDGxtxrYzT92eMSHgbSaZ-v-4PEm7KvYrgkN9fOFEY2_MNu3reAjK3-UajBYv_aKVbN3oOwY7RiDxNzfB1EkdBseuYk5vpwuPO844k9u4Z9m-hgZRzee9X77j9GPVQRsxYJDGBYXEyrZ6n_k3CK86xR7zq96vEiYCyzIeva9SwM-Q');"></div>
+<div class="aspect-square w-full bg-cover bg-center rounded-lg cursor-pointer opacity-70 hover:opacity-100" data-alt="Thumbnail of on-model shot." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJVWeAI4HZOOB1VYRwKtDoBC2YVt4UEq5SJJEzKJIeU-QmOq85no_-P4wEYIxzq7fPNj7jOr0bA9bImFJxT_YAdQTvjHXaAcs2k6ZDE9XSNN7QFfFuxRhDXuUPhDu-oNARiDttaYOpFUZ7edsXuDXLjR4exdRliXgZEaW3WR4JvsXGlzuxRRNLt6m-2ogzw2diG5ngkXZMotAklfS8xeT9BZj6PBb1Q3MF3X0rrOVuv9QXGBhOTmVA3OEFNPA2hs5iudViAJqZ76Y');"></div>
+<div class="aspect-square w-full bg-cover bg-center rounded-lg cursor-pointer opacity-70 hover:opacity-100" data-alt="Thumbnail of lifestyle image." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNDrYM1DCRyFlY3IUjxDOjjita6ldiPgFSlqR9l9ndXSxB6HaCTmp9z7zgDkrJri7eVa1kCb8aZ1kPC-aHpPGON8k3DEwm8HGopgx6zOllUaZhIk9i2DFJojUARYqVYslPHrcKtIhZC8tltmv_Eu9BPs1v4ZXC_R_QqqINhM7BF3Xm31OpqJgrEdxpGb1H98o_oBgjMTksLiSpaZNfVA1oKrrAHCJhJQxziQG-60SEq1btBC6nEgNaaX10qdn8-3yfskd1GJYY5EI');"></div>
+</div>
+</div>
+<!-- Right Column: Product Information -->
+<div class="flex flex-col gap-6">
+<div>
+<p class="text-sm font-medium text-primary mb-2">Aure Eyewear / Sunglasses</p>
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em]">The Sorrento</h1>
+<div class="flex items-center gap-4 mt-3">
+<p class="text-3xl font-bold text-text-primary-light dark:text-text-primary-dark">$145.00</p>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base text-primary">star_half</span>
+<span class="text-sm text-text-secondary-light dark:text-text-secondary-dark ml-1">(120 reviews)</span>
+</div>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-relaxed mt-4">A timeless frame for the modern individual. Handcrafted with premium acetate for a lightweight feel and all-day comfort.</p>
+</div>
+<div class="space-y-4">
+<div>
+<p class="text-sm font-bold mb-2">Color: <span class="font-medium">Tortoise</span></p>
+<div class="flex items-center gap-3">
+<button class="size-8 rounded-full bg-cover ring-2 ring-primary ring-offset-2 ring-offset-background-light dark:ring-offset-background-dark" data-alt="Tortoise shell color swatch, selected." style="background-color: #8B4513;"></button>
+<button class="size-8 rounded-full bg-cover hover:ring-2 ring-primary ring-offset-2 ring-offset-background-light dark:ring-offset-background-dark" data-alt="Black color swatch." style="background-color: #000000;"></button>
+<button class="size-8 rounded-full bg-cover hover:ring-2 ring-primary ring-offset-2 ring-offset-background-light dark:ring-offset-background-dark" data-alt="Champagne color swatch." style="background-color: #E6D2B5;"></button>
+</div>
+</div>
+<div>
+<p class="text-sm font-bold mb-2">Size</p>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[48px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-surface-light dark:bg-surface-dark text-text-primary-light dark:text-text-primary-dark border border-black/20 dark:border-white/20 text-sm font-bold leading-normal tracking-[0.015em]">S</button>
+<button class="flex min-w-[48px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-text-primary-light dark:bg-text-primary-dark text-white dark:text-black text-sm font-bold leading-normal tracking-[0.015em]">M</button>
+<button class="flex min-w-[48px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-surface-light dark:bg-surface-dark text-text-primary-light dark:text-text-primary-dark border border-black/20 dark:border-white/20 text-sm font-bold leading-normal tracking-[0.015em]">L</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center rounded-lg border border-black/20 dark:border-white/20">
+<button class="px-3 py-2 text-text-secondary-light dark:text-text-secondary-dark hover:text-primary">-</button>
+<span class="px-4 py-2 font-bold">1</span>
+<button class="px-3 py-2 text-text-secondary-light dark:text-text-secondary-dark hover:text-primary">+</button>
+</div>
+<button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+<div class="border-t border-black/10 dark:border-white/10 pt-6 space-y-2">
+<details class="group">
+<summary class="flex justify-between items-center cursor-pointer list-none py-2">
+<span class="font-bold">Product Description</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mt-2">The Sorrento blends classic design with modern materials. Featuring polarized lenses for full UV protection and handcrafted from eco-friendly acetate, these sunglasses are built to last and designed to impress.</p>
+</details>
+<div class="border-b border-black/10 dark:border-white/10"></div>
+<details class="group">
+<summary class="flex justify-between items-center cursor-pointer list-none py-2">
+<span class="font-bold">Sizing &amp; Fit</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mt-2">Frame Width: 140mm, Lens Width: 50mm, Bridge: 20mm. Designed for a comfortable, medium fit suitable for most face shapes.</p>
+</details>
+<div class="border-b border-black/10 dark:border-white/10"></div>
+<details class="group">
+<summary class="flex justify-between items-center cursor-pointer list-none py-2">
+<span class="font-bold">Shipping &amp; Returns</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mt-2">Free worldwide shipping. We offer a 30-day return policy for a full refund or exchange, no questions asked. Your satisfaction is our priority.</p>
+</details>
+</div>
+</div>
+</div>
+<!-- Customer Reviews Section -->
+<div class="mt-16 pt-12 border-t border-black/10 dark:border-white/10">
+<h2 class="text-3xl font-black mb-8 text-center">Customer Reviews</h2>
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-xl shadow-md flex flex-col md:flex-row flex-wrap items-center justify-center gap-x-12 gap-y-8">
+<div class="flex flex-col gap-2 items-center text-center">
+<p class="text-5xl font-black leading-tight tracking-[-0.033em]">4.5</p>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-xl">star_half</span>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">Based on 120 reviews</p>
+</div>
+<div class="grid min-w-[240px] max-w-[400px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-x-4 gap-y-3">
+<p class="text-sm font-normal">5</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-black/10 dark:bg-white/10"><div class="rounded-full bg-primary" style="width: 75%;"></div></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal text-right">75%</p>
+<p class="text-sm font-normal">4</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-black/10 dark:bg-white/10"><div class="rounded-full bg-primary" style="width: 15%;"></div></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal text-right">15%</p>
+<p class="text-sm font-normal">3</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-black/10 dark:bg-white/10"><div class="rounded-full bg-primary" style="width: 5%;"></div></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal text-right">5%</p>
+<p class="text-sm font-normal">2</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-black/10 dark:bg-white/10"><div class="rounded-full bg-primary" style="width: 3%;"></div></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal text-right">3%</p>
+<p class="text-sm font-normal">1</p>
+<div class="flex h-2 flex-1 overflow-hidden rounded-full bg-black/10 dark:bg-white/10"><div class="rounded-full bg-primary" style="width: 2%;"></div></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal text-right">2%</p>
+</div>
+</div>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<p class="font-bold">Sarah J.</p>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm">"Absolutely love these sunglasses! They feel so premium and look incredibly stylish. I get compliments every time I wear them."</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<p class="font-bold">Michael B.</p>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base">star</span>
+</div>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm">"Great quality and fit. The lenses are crystal clear. Only knocking one star because shipping took a little longer than expected."</p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<p class="font-bold">Emily K.</p>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm">"The perfect pair of sunglasses. Lightweight, comfortable, and they go with every outfit. Highly recommend!"</p>
+</div>
+</div>
+</div>
+<!-- You Might Also Like Section -->
+<div class="mt-16 pt-12 border-t border-black/10 dark:border-white/10">
+<h2 class="text-3xl font-black mb-8 text-center">You Might Also Like</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col mb-3" data-alt="The Capri sunglasses model." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIs1100pTqdm6F1gWqIlIjX6o7HXHyrBIXMvjL75iuWWm6VNkCBLdx3OjUj5HdjOmQ2E61ylH5o_HxeTwRqag7o5HSVPyN6uQo2F0bsL6PNFghPguXMa4ymhY7rFkJCEikfSkieUsTemylzzU1CnWOjospwjpFx5sPVDkZNxZ7MDy5tO2uMZ12Rr0HdVnifrd5_F4jnScV8oeROKXPV4cDuXLISfx2y45vUNLI_jAS4T_C_dtsV1QN8ml_mCQAfiBxb9aurv3M_v4');"></div>
+<h3 class="font-bold">The Capri</h3>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">$135.00</p>
+</div>
+<div class="flex flex-col group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col mb-3" data-alt="The Amalfi eyeglasses model." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6IGKc4dWLQDB7ILB5QqxyuzlPhUbz_1BaqDj-dCRoQ5ZfyWGGfELaf_zyuUTL8zSBhk-2iv6hpjGwSJ5vXTFRTHTfLitC8n1DA8O54qRkGby7jxF9Y2fuKphdViZSsvvySuCqTLN7ng1RC3UwAuCNyK_rxPG37nGeIf1AIWFRAYzGtVuN6oq40fo5P2dNtkL-3BFBSN7W4tvjYQ-bZw2ed4rdt522hCH7KiHZMjznKyhl3X89Cfq8eE93fBKybOuSq1siPdUCj-k');"></div>
+<h3 class="font-bold">The Amalfi</h3>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">$155.00</p>
+</div>
+<div class="flex flex-col group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col mb-3" data-alt="The Positano sunglasses model." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyhoPGbaj-VE0wIJZX1POqRf2bE7sBR_ib-Bv2daxpYEVGl4b26PN-yaYgT8yDf3V3P3YUTLFJO79ss6PFzYNxBP_O1-9xaXe5ITV9__HBUhEJKrPdcaaziRB1huEQ24VUp1UKyMk1Q6pMHpa69IBTLhrvwAQjbeJt9eATlLhddoMrAvtmDCe03W2swzQeQBz-zqtWwOOFecEUoOGD-sAAZPkRyX8M7g9-T-MshrFpQph6GUU-4tY1llyg-8vDEzp2Q1iDwLj1wko');"></div>
+<h3 class="font-bold">The Positano</h3>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">$140.00</p>
+</div>
+<div class="flex flex-col group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col mb-3" data-alt="The Roma eyeglasses model." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVXz9dfxgUXnY6vM4EpBGG46Sx1t47dZCuZpAt3mTMo-sNiwoPY7aGoMoUracyyUKm0Qyww_3QjdOYKa5lvSiG5ghBh8Cjh6gzqj75zJ2kNfOHnlZUac7xqcFWQd3qkHcYk-7_x7qbjW4RhG0lg2iM1syF9BfKI429sgg2hE06fcV0TSDqda9MAscDDZ3Qo_KQM-2rfsqzXwQv-SGB5UDY2SNzWHOH9ejkm3PDRZ52iZ7li92XP1-27Qy8fiQsPXfub-u41xyKWfg');"></div>
+<h3 class="font-bold">The Roma</h3>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">$160.00</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

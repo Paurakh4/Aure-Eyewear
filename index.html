@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aure Eyewear Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+</style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="w-full bg-white dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+<div class="mx-auto flex max-w-7xl items-center justify-between whitespace-nowrap px-4 py-3 sm:px-6 lg:px-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Aure Eyewear</h2>
+</div>
+</div>
+<div class="hidden md:flex flex-1 items-center justify-center">
+<div class="flex items-center gap-9">
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="product-listing.html">Shop</a>
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="about-us.html">About</a>
+<a class="text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="contact-us.html">Contact</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end items-center gap-3">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-gray-100 dark:bg-gray-800 items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-gray-100 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-gray-100 dark:bg-gray-800 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4GMcp4MvQ_jSpGdk4_meMVub58I1I7UeEmCsknqohLTebCcwioAJn1nk3caYns1e3atQ_eg9AoqXi4lMVS81XLZozs9wbQgoa6HZO6JcX1VoNpkw-d5f_oDHB9hfla9x_5bMIwk7eJwiCUHa0yd36LmddiXjnxB7yQCuky79uAji73PuqWOgAMc3uaWjwHmcr8DcoEqXCGkwGyToA2oDR-yA7KGzVQeen8r8XjwXd9QoNN47QzME_u-uBuXVWL1xFlivoTr-OIc4");'></div>
+</div>
+</div>
+</header>
+<main class="w-full">
+<section class="relative h-screen bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQOWne5pEo7SKhyHRlygjAVLbCv004mkbcgwgE53CaEMnBvZyHUjqo2kd8u9HVHrINt6c6QehlStGdhRM_gLDdZtk52gzaE3rozJJg_-3VGNnIJ1Sk8TkozZsxP8uKOfwWn0yF759L4evoZNwWoXFaY9mlIYXx1rA0ARHWdLhosf79IjfJvIw0W0_4V6PiMjxJmap7iA0LDZeac5ROXkWPPLjlAK01VXMMj4_NepkeyNH1tY37mBWAHCRfkXzLXPtPeX0ajS5czA');">
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="relative h-full flex flex-col justify-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 text-white">
+<div class="max-w-md">
+<h1 class="text-7xl font-bold leading-none tracking-tight">WHERE VISION MEETS ELEGANCE</h1>
+<p class="mt-4 text-lg text-gray-200">Stylish, durable, and effortless. Find the perfect pair that matches your everyday vibe.</p>
+</div>
+<a class="absolute bottom-10 right-4 sm:right-6 lg:right-8 px-6 py-3 border border-white/50 text-white text-sm font-medium tracking-wider uppercase hover:bg-white hover:text-black transition-colors" href="#">Discover Now</a>
+</div>
+</section>
+<div class="bg-primary text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center text-xs font-medium tracking-widest uppercase">
+<span>Designed for Modern Vision</span>
+<span class="hidden md:inline">Free Shipping &amp; 30-Day Return Guaranteed</span>
+<span class="hidden lg:inline">Designed for Modern Vision</span>
+</div>
+</div>
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-center text-4xl font-bold tracking-tight mb-4">FRESH PICKS FOR YOU</h2>
+<div class="flex justify-center space-x-8 mb-12 text-sm font-medium tracking-wider uppercase text-gray-600 dark:text-gray-400">
+<a class="pb-2 border-b-2 border-primary text-primary" href="#">New Arrivals</a>
+<a class="pb-2 border-b-2 border-transparent hover:border-primary hover:text-primary transition-colors" href="#">Sunglasses</a>
+<a class="pb-2 border-b-2 border-transparent hover:border-primary hover:text-primary transition-colors" href="#">Eyeglasses</a>
+<a class="pb-2 border-b-2 border-transparent hover:border-primary hover:text-primary transition-colors" href="#">Blue Light</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+<div class="group">
+<div class="bg-gray-100 dark:bg-gray-800 overflow-hidden mb-4 rounded-lg">
+<img alt="Rayline Sum sunglasses with a clear frame and green lenses" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqgXXyg4ldYrWGwLkAFUlwAEgX2yW38lN9FJLn-Jf9Mn_EpNZWCeu2cAOFbYpDl10CzAsY9x-hyainb3SvgaP9uW2SIAFk1KyL-liKx2O7lyX6-LyCQHiIIbH4pGjaxRuaqpYtL9PSDkruQg7iq1MWSp1-PdW2ouG1dQn-D8aS8f4Dl9gmiDQEL4mZR_hUFn0eud3zJgxSAdmasVCkG1YbXA7hrI69F39ZmNhjg5ZJrsKjdpma_x1czoyhE6z8bn-9TZHE8cbH6Zw"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Rayline Sum</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$100</span>
+<span class="line-through text-gray-500 dark:text-gray-400 ml-2">$120</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+<div class="group">
+<div class="bg-gray-100 dark:bg-gray-800 overflow-hidden mb-4 rounded-lg">
+<img alt="Solé Oversize sunglasses with a thick black frame" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXvayUPRWJ8TvBHPXmq4kY49GKYKUhUPLukpitVrWKsCl1h-lUGwYK41icmhFsGSCDlhI4wv9P-ge8qRkHa43FjWf2fBNrvXdl8J6767GgGmCRRTA6-M4gvE3jC6_kpjK0P9H6AjKEowuo2QnZ1FCAV3X3nBBQGj3w0WMjSYVAogXtFplMyXH6yXKJ-IT9kZ-fUBsN2HGl9d0GeI6lWbVWOEFExTnxd0tAY-8dH3iMJWTMRZydTRvwSDEuy8NaANCEbgHHI9-bRRM"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Solé Oversize</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$89</span>
+<span class="line-through text-gray-500 dark:text-gray-400 ml-2">$120</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+<div class="group">
+<div class="bg-gray-100 dark:bg-gray-800 overflow-hidden mb-4 rounded-lg">
+<img alt="Lyon Aviator sunglasses with a thin metal frame" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXr3rOD9w7GKwOrQqyou50aqAjjDNp5TPJ7QJGeQsSBYDn6VUTihmHtHFaVZgP0II1TbXSXSWr5cZm1aC9RIwlroz69fmBS1rLRn8b_8jl-WYEUc8xFs1RDELeI2686hj5muNxIs21FQt4FrtcfND_MOQRPQ3zQ_Zu_blFOf-AQrEIPlgpipyhRu92C8s0PfaDQEde7JJB9SIaPVBFIgS_w1xP1EpFNHOAQniJtXjn2PWuhAFYWbNHFSbD8sfN4HPpMqIxHr2BcS8"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Lyon Aviator</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$120</span>
+<span class="line-through text-gray-500 dark:text-gray-400 ml-2">$220</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+<div class="group">
+<div class="bg-gray-100 dark:bg-gray-800 overflow-hidden mb-4 rounded-lg">
+<img alt="Terrazzo Square sunglasses with a tortoise shell frame" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTx8rciOvJQJoXiGfrRJDMVFIGYrvqRgPkSbb7nFuhV9SeIfhN4mYwnRSNiIPqQLf8Xry8vOlbFQM4PhtbGv-OsjGL5m8praKqn84ISjLCFbXIKfl08wzQkI5jXO9n2KQx2caHYW5lQb1okeScr2fi5SaMlexpJLr1A6MJLDq261YSU6a9Z79pFLcGQI4KYoJSvhuiSQmWp79F87javzvI7dL1NOGJbbCjkqqBBXYm1L6rXyp5VoS_W1ivSbtCip6Dm_C7G7ZGwLk"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Terrazzo Square</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$120</span>
+<span class="line-through text-gray-500 dark:text-gray-400 ml-2">$220</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="underline font-medium tracking-wider uppercase text-sm text-primary hover:text-primary/80" href="#">Explore all collection</a>
+</div>
+</div>
+</section>
+<div class="bg-primary text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center text-xs font-medium tracking-widest uppercase">
+<span>Designed for Modern Vision</span>
+<span class="hidden md:inline">Free Shipping &amp; 30-Day Return Guaranteed</span>
+<span class="hidden lg:inline">Designed for Modern Vision</span>
+</div>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-2">
+<div class="bg-cover bg-center min-h-[600px]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQOWne5pEo7SKhyHRlygjAVLbCv004mkbcgwgE53CaEMnBvZyHUjqo2kd8u9HVHrINt6c6QehlStGdhRM_gLDdZtk52gzaE3rozJJg_-3VGNnIJ1Sk8TkozZsxP8uKOfwWn0yF759L4evoZNwWoXFaY9mlIYXx1rA0ARHWdLhosf79IjfJvIw0W0_4V6PiMjxJmap7iA0LDZeac5ROXkWPPLjlAK01VXMMj4_NepkeyNH1tY37mBWAHCRfkXzLXPtPeX0ajS5czA');"></div>
+<div class="flex flex-col justify-center items-start p-16 bg-white dark:bg-background-dark">
+<p class="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">Glasses</p>
+<h2 class="text-6xl font-bold leading-tight tracking-tight mb-6 text-gray-900 dark:text-white">LIGHT. <br/>MODERN. <br/>YOU.</h2>
+<p class="text-gray-600 dark:text-gray-400 max-w-sm mb-8">Effortless frames that reflect who you are soft tones, clean lines, timeless presence.</p>
+<div class="flex space-x-4">
+<a class="px-8 py-3 border border-gray-300 dark:border-gray-700 text-sm font-medium tracking-wider uppercase hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition-colors text-gray-900 dark:text-white" href="#">Shop Men</a>
+<a class="px-8 py-3 border border-gray-300 dark:border-gray-700 text-sm font-medium tracking-wider uppercase hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition-colors text-gray-900 dark:text-white" href="#">Shop Women</a>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2">
+<div class="flex flex-col justify-center items-start p-16 order-2 md:order-1 bg-white dark:bg-background-dark">
+<p class="text-sm tracking-widest uppercase text-gray-600 dark:text-gray-400 mb-4">Sunwear</p>
+<h2 class="text-6xl font-bold leading-tight tracking-tight mb-6 text-gray-900 dark:text-white">BUILT <br/>FOR VISION</h2>
+<p class="text-gray-600 dark:text-gray-400 max-w-sm mb-8">Engineered with precision. Designed for movement. Made to last beyond seasons.</p>
+<div class="flex space-x-4">
+<a class="px-8 py-3 border border-gray-300 dark:border-gray-700 text-sm font-medium tracking-wider uppercase hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition-colors text-gray-900 dark:text-white" href="#">Shop Men</a>
+<a class="px-8 py-3 border border-gray-300 dark:border-gray-700 text-sm font-medium tracking-wider uppercase hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition-colors text-gray-900 dark:text-white" href="#">Shop Women</a>
+</div>
+</div>
+<div class="bg-cover bg-center min-h-[600px] order-1 md:order-2" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQOWne5pEo7SKhyHRlygjAVLbCv004mkbcgwgE53CaEMnBvZyHUjqo2kd8u9HVHrINt6c6QehlStGdhRM_gLDdZtk52gzaE3rozJJg_-3VGNnIJ1Sk8TkozZsxP8uKOfwWn0yF759L4evoZNwWoXFaY9mlIYXx1rA0ARHWdLhosf79IjfJvIw0W0_4V6PiMjxJmap7iA0LDZeac5ROXkWPPLjlAK01VXMMj4_NepkeyNH1tY37mBWAHCRfkXzLXPtPeX0ajS5czA');"></div>
+</section>
+<div class="bg-primary text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center text-xs font-medium tracking-widest uppercase">
+<span>Designed for Modern Vision</span>
+<span class="hidden md:inline">Free Shipping &amp; 30-Day Return Guaranteed</span>
+<span class="hidden lg:inline">Designed for Modern Vision</span>
+</div>
+</div>
+<section class="py-24 relative bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQOWne5pEo7SKhyHRlygjAVLbCv004mkbcgwgE53CaEMnBvZyHUjqo2kd8u9HVHrINt6c6QehlStGdhRM_gLDdZtk52gzaE3rozJJg_-3VGNnIJ1Sk8TkozZsxP8uKOfwWn0yF759L4evoZNwWoXFaY9mlIYXx1rA0ARHWdLhosf79IjfJvIw0W0_4V6PiMjxJmap7iA0LDZeac5ROXkWPPLjlAK01VXMMj4_NepkeyNH1tY37mBWAHCRfkXzLXPtPeX0ajS5czA');">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center text-white mb-12">
+<h2 class="text-4xl font-bold tracking-tight">TRENDING NOW</h2>
+<p class="text-sm tracking-wider uppercase mt-2">Discover our most wanted frames</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<div class="group bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
+<div class="bg-gray-100 dark:bg-gray-700 overflow-hidden mb-4 rounded-lg">
+<img alt="Lumen Frame sunglasses with gold frame and green lenses" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg_v6ntLMXcMhJsSyeLPG00Pjj_RVHRV84BYI8I2UWY6KXD9C9A2VpRgFKb7ASI9eQ3WIavfLSxp3zG1rLfeSD0W9D8Jf-KVWuBGrlmUqwSmY6ol4ftym_gZX_aj_ZXEsGq-zxmxLDOPBBF_PoLjXXkRagNV56D76u1Ifvn0oFPSyznLQjk-dhkvnWcp2lXkxet7hHtLAxxedtp1qbp0MXuc-tr9rmWVjcXkC2_LZgWMolarieYhOSTKvhP6qVnkDAzzrLLBGX_6c"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Lumen Frame</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$100</span>
+<span class="line-through text-gray-500 dark:text-gray-400 ml-2">$120</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
+<div class="bg-gray-100 dark:bg-gray-700 overflow-hidden mb-4 rounded-lg">
+<img alt="Vortex Sport sunglasses with a thick black sporty frame" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYcyQ91o_QyjaSXfjjtbXanc8Lw-pijkeNRbwkAW9eJmndvfAlPJI6C1zoB3QzlDEkbbtZL_d6V0zpM_gt0nmKqckXKgWlikDCFvLJHs5XDzzDZiIlznzkUyQshmv4tWqs6ZBeuyHrppJxeHDYuA6WezEBCugUcwXKQxaIgNR_1QCvHR9vuJlUp9AgrXeu0P_tO1qFTU1lw-po6CAluEKhMAIO5LnQot5Z-xurSdwgXe3krg652ldbB7PidfCK2-HRy-KJGU2Whb4"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Vortex Sport</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$200</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
+<div class="bg-gray-100 dark:bg-gray-700 overflow-hidden mb-4 rounded-lg">
+<img alt="Soulline Round sunglasses with a silver frame and bright blue lenses" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIvolvkUIsKSDxVuShyeNaVjDnTYkx1X072alA8Y0vLw9CQJBrWXMoQnOWDMSo-2bwIgYPRXG0bxCjl6iJjyaifV3I_oKq2unXTgz1vNGZWlXAbQX3r_4vg7cD946VPwZJDBUVeWr9ihmi5KogYA1lEspcpfPuay_hCLNwmkt6U7AYKRKQlWet3GUT_Y9OM0v4ECpCCqwJ2qIaL2QF2tgTvQXsY9yQ64jx93aFoUWG2s20m6Vu5BqzHUSGBas8KwBifN1G1NmoebI"/>
+</div>
+<div class="flex justify-between items-center">
+<h3 class="font-medium tracking-wider uppercase text-gray-900 dark:text-white">Soulline Round</h3>
+<div class="text-sm font-medium text-gray-900 dark:text-white">
+<span>$100</span>
+<span class="line-through text-gray-500 dark:text-gray-400 ml-2">$120</span>
+</div>
+</div>
+<div class="flex justify-between items-center mt-2 text-sm">
+<div class="flex items-center text-gray-600 dark:text-gray-400">
+<span>4.8 (120 reviews)</span>
+</div>
+<button class="font-medium uppercase tracking-wider text-primary hover:underline">+ Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="text-4xl font-bold tracking-tight mb-4 text-gray-900 dark:text-white">BUILT FOR MODERN VISION</h2>
+<p class="text-gray-600 dark:text-gray-400">We create <span class="font-bold text-gray-900 dark:text-white">eyewear</span> for those who move with <span class="font-bold text-gray-900 dark:text-white">intent</span> and carry <span class="font-bold text-gray-900 dark:text-white">purpose</span> in every step blending <span class="font-bold text-gray-900 dark:text-white">clarity</span> with <span class="font-bold text-gray-900 dark:text-white">character</span> so every frame becomes a reflection of how you see yourself.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<img alt="Sunglasses with a clear frame" class="w-full h-auto object-cover aspect-[2/3] rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsz4i7NxB53hOe28QfL0P6_ZHFqALi0DWuTbUEcWhw0a3H6ctH7YFB_z9jfrezdyERIM5ypOIiwR9IyqcKNXC4txMNYDcTqRCuyUFgJAHqQXDlwJwp5iku_t533ejXNddI_pxT3zPjY-cpmijkbYP4GIXR2cKRGm7-lHSTsaRgox0sOsjcLt4Q8ZvYg44sNdOf-8vXhdC2MTy4kDFaGLoRhE4ILPwcZLyYVeDuvhTn5QkDI_p-awD6niBP8HR3yjAXBXw-jUhCyJs"/>
+<img alt="A person holding a pair of black sunglasses" class="w-full h-auto object-cover aspect-[2/3] rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2andUwhFKVZ1TJoTlTZu6LwdTXfBao3Qozzg9srCK6N5WTLWQm2D34ZNXXG51fZdjZXaowHIjMxAmPxCtL-5DGDQ-XnVtzOpoCiSrSlfGV0vBBP--zTyXUcZ5IZEubsqQdlGaLaKCDa9gNxDcEqReLwDC6b9LWvtWS8DI4D_7-ID_2xUb3J5DsUjyy5-GqprG4znCmEjM7fEaYWeKVaNV_Sb1mEvx1tSStvPtsZEGwk8s6A3tt46SCdz3CGw4MpGTRLNeR0UrPI"/>
+<img alt="A pair of metal frame sunglasses being held" class="w-full h-auto object-cover aspect-[2/3] rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxTG_Q8ciRzeDliAZ-ejBe1JKrmIt2cd8v8hELtntllykWfsQapZtS2IL2QNmddUqB8z9iaOt8QeQWhHuL461hZEdTYMnEbXUjmmzIDTKAcxUkJDknlgD4x10OchBDdiF5hVexHdkcRTABmPLnnzwruv7zpJUZvfiRgNRKCtgQTyhdmHy28226ymjIKX98vJZdVW1msg2DfluluhJFQwPSYogs38aPDJknIViKDvMyXAnJsYaDOAJm_WF_5ixGRO9xsW5HaDBDjls"/>
+<img alt="Sunglasses with a tortoise shell frame" class="w-full h-auto object-cover aspect-[2/3] rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCegtQABD7RMeZXRWW1bbcVKlUgdRsgb3-1vvR2s1brXuS9Tnj8xlAvxZr9knFhpTPdrPuEV4XGkDFKWOnhmprINMlMQpZpdZtTBbqFTRoVR9RwKpuolp9ksexaXp6nafWHkt1TVejciSByGqYQVIFev0xLzxn4PyaCfq8xO7hhVtBYnD5TqPYOmWAe1JvnhSP9QE8iRHuJfq4zCL4WMVH8nuDEYAPX7FHD7H1iswifQoh65-7Acg7uqtaziwf7LH33KTpOW9OUNAM"/>
+<img alt="A pair of black wayfarer style sunglasses" class="w-full h-auto object-cover aspect-[2/3] rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCikofFlDnFqi-JbBkMjztbqTd1_M28ocdQ5CJj3V1PXcN7I8hFq1IqYCSMW_XVkhb--bYua_K567Aeawxv7H0nbDa7Pwv1OQoBsTiajeVO8dckHZA9nOESxcw7KwhFtZIKlYfTV038Mxa-3OqzUxCboIm9A5Fz2eeNRhXYFwgNiSQe9fQF8IfNO7lLpwwql2EkWq1UBxUkGv-9betPwpu4y-kGifm_dglyKsV4kWnEM4wR8rGjIHn7vMfsGZeMYsaPu2fhgg76qLg"/>
+<img alt="A pair of thick-framed black sunglasses" class="w-full h-auto object-cover aspect-[2/3] rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY3XPuWdyJQfV0t_n83nnaMEqLeTW-YwWvH2gSmOWqQ-u18Vj18kGod5x3dRVXiBk2wjlwgPZvMSUg8w2w63AOUnAnrrMKk1Vd2IXQ9fRnWGkAGMiK3trtctC9OCrNlM62USnTPbQwDPgumiC5u6k0UWNT7lmQCOWfLAwGDIeUeFohh8_7A5IRF5xMgl6Cb3TDI_sFw8m8DtFmWI_aUpy5oA48GMHAwfrI82x8YGKnvef-LR4DoR1TRRJweNF_kRgZb8sFt9a8uGg"/>
+</div>
+</div>
+</section>
+<section class="relative h-[80vh] bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPQOWne5pEo7SKhyHRlygjAVLbCv004mkbcgwgE53CaEMnBvZyHUjqo2kd8u9HVHrINt6c6QehlStGdhRM_gLDdZtk52gzaE3rozJJg_-3VGNnIJ1Sk8TkozZsxP8uKOfwWn0yF759L4evoZNwWoXFaY9mlIYXx1rA0ARHWdLhosf79IjfJvIw0W0_4V6PiMjxJmap7iA0LDZeac5ROXkWPPLjlAK01VXMMj4_NepkeyNH1tY37mBWAHCRfkXzLXPtPeX0ajS5czA');">
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="relative h-full flex flex-col justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-white">
+<h2 class="text-5xl font-bold leading-tight max-w-lg">THE SUN FEELS BETTER WHEN YOU SEE IT CLEARLY</h2>
+<div class="max-w-md w-full">
+<div class="flex justify-between items-center text-sm mb-2">
+<p>The sun feels better when you see it clearly</p>
+<div class="flex space-x-2">
+<span>←</span>
+<span>→</span>
+</div>
+</div>
+<div class="space-y-4 text-xl font-medium tracking-wide">
+<div class="border-b border-white/50 pb-2">BOLD FRAMES</div>
+<div class="border-b border-white/50 pb-2">SOFT LIGHT</div>
+<div class="border-b border-white/50 pb-2">EVERYDAY FREEDOM</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="text-center mb-8">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-gray-900 dark:text-white">A MINDSET FOR MODERN VISION AURE</h2>
+<div class="text-sm tracking-widest text-gray-600 dark:text-gray-400">
+<span>JAKARTA, INDONESIA</span>
+<span class="mx-2">|</span>
+<span>INFO@AUREEYEWEAR.COM</span>
+</div>
+</div>
+<div class="border-t border-b border-gray-200 dark:border-gray-800 py-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm uppercase tracking-wider font-medium">
+<div class="space-y-4">
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">01</span> HOME</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">02</span> SHOP</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">03</span> COLLECTIONS</a>
+</div>
+<div class="space-y-4">
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">04</span> JOURNAL</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">05</span> ABOUT</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">06</span> PHILOSOPHY</a>
+</div>
+<div class="space-y-4">
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">07</span> LOOKBOOK</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">08</span> CONTACT</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">09</span> COLLECTIONS</a>
+</div>
+<div class="space-y-4">
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">10</span> SUPPORT</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">11</span> FAQ</a>
+<a class="block text-gray-800 dark:text-gray-200 hover:text-primary" href="#"><span class="text-gray-500 dark:text-gray-400 mr-2">12</span> POLICY</a>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">
+<p>© 2024 Aure Eyewear. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

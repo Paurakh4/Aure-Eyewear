@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shopping Cart - Aure Eyewear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#192A51",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 dark:border-b-gray-800 px-6 md:px-10 py-3 bg-white dark:bg-background-dark">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#111418] dark:text-white">Aure Eyewear</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-[#111418] dark:text-gray-300 hover:text-primary dark:hover:text-white" href="#">Shop</a>
+<a class="text-sm font-medium leading-normal text-[#111418] dark:text-gray-300 hover:text-primary dark:hover:text-white" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-background-light dark:bg-gray-800 text-[#111418] dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">2</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_8frCXHtqKfE6pe-_v5_H2gZwYfF8_GIKY5HrKm4QLW4Dl1mtC9jQ20qVyBTZNTZUw-J73ompA4vtblIUUsZgY8Byby1Z93Qav2Vh5uLkbHDhFMIaGPnBb9H4TctKWxqDoIbi28KncsK65y-sDzo9mqbmlHYLK7nP3bqWIsXJDf7QCTW-nJgpV6IfvvPtCBR_mIKeHlboJTidMTpIGGiDh96Fih277EeuckF4Fv_TDktGbi9AZUEWrGAa5isiUBCi8JZW7hux3c");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-10">
+<div class="max-w-6xl mx-auto">
+<!-- Breadcrumbs & Heading -->
+<div class="mb-8">
+<div class="flex flex-wrap gap-2 mb-2">
+<a class="text-sm font-medium leading-normal text-gray-500 dark:text-gray-400" href="#">Home</a>
+<span class="text-sm font-medium leading-normal text-gray-500 dark:text-gray-400">/</span>
+<span class="text-sm font-medium leading-normal text-[#111418] dark:text-white">Shopping Cart</span>
+</div>
+<div class="flex flex-wrap justify-between gap-3">
+<p class="text-4xl font-black leading-tight tracking-[-0.033em] text-[#111418] dark:text-white min-w-72">Your Bag</p>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+<!-- Left Column: Cart Items -->
+<div class="lg:col-span-2">
+<div class="flex flex-col gap-4">
+<div class="hidden md:grid grid-cols-5 gap-4 px-4 py-2 text-xs font-semibold uppercase text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-800">
+<span class="col-span-2">Product</span>
+<span class="text-center">Quantity</span>
+<span class="text-right">Price</span>
+<span></span>
+</div>
+<!-- ListItem 1 -->
+<div class="flex flex-col md:grid md:grid-cols-5 items-center gap-4 bg-white dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex items-start gap-4 col-span-2 w-full">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-24 shrink-0" data-alt="Aviator Sunglasses on a plain background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNId1-U_xcF0r-xsKrEKiknFGcnqsNXFvPj8j0QlmBXnQdsxuCwvqowwBRvLncrARMdYvWfB59PjHaXT7qHxUdF7g319KieB8GzGopraBBdsTf-3PsyPYJkMs-sdSXl8uHKTOoZa0SnzemfP6DIvQ1eSwI7lP8oHlfBhZLrYzrdlQizipyS_R23iWjsT--2OOXjHAEYTQ-w-Hp07Ki3sjDZyIMLBptDbrrS7mTpz0CtBuP_vKgCj0bnD3zFdgPIuvj6nsjRtVbz8M");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-[#111418] dark:text-white">Aviator Sunglasses</p>
+<p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Black / Standard</p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 text-[#111418] dark:text-white">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-background-light dark:bg-gray-800 cursor-pointer">-</button>
+<input class="text-base font-medium leading-normal w-8 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="1"/>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-background-light dark:bg-gray-800 cursor-pointer">+</button>
+</div>
+<p class="text-base font-medium leading-normal text-right text-[#111418] dark:text-white">$150.00</p>
+<div class="flex justify-end">
+<button class="text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<!-- ListItem 2 -->
+<div class="flex flex-col md:grid md:grid-cols-5 items-center gap-4 bg-white dark:bg-background-dark p-4 rounded-lg shadow-sm">
+<div class="flex items-start gap-4 col-span-2 w-full">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-24 shrink-0" data-alt="Cat-Eye Frames on a plain background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFaFMz26NSYv_rK_kAGk8QEEkcR39cFNsQrYMGvHBbhS_o8AX3tZjjS1dzk-5Z9XnbNBufie0FNB3-Mq1eQsEKn_CnWIJL77OBrXUg8pfWJharLDC6uWauybNJTkJh76-b7-xwx7vNeekCzt4_zhlPST2TKrYfuryRJe7thCgzCs3wYSBLUtgVdUbyfkY9N8tIUic_-OEpvNiQw0xi5_vrgwb8CxLf4pPJMtOjes4_nLiAowvEJpgEHadmz0SKJJIDJxDt95gMc1I");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-[#111418] dark:text-white">Cat-Eye Frames</p>
+<p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Tortoiseshell / Prescription</p>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 text-[#111418] dark:text-white">
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-background-light dark:bg-gray-800 cursor-pointer">-</button>
+<input class="text-base font-medium leading-normal w-8 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="1"/>
+<button class="text-base font-medium leading-normal flex h-8 w-8 items-center justify-center rounded-full bg-background-light dark:bg-gray-800 cursor-pointer">+</button>
+</div>
+<p class="text-base font-medium leading-normal text-right text-[#111418] dark:text-white">$180.00</p>
+<div class="flex justify-end">
+<button class="text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-1">
+<div class="sticky top-10 bg-white dark:bg-background-dark p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-bold text-[#111418] dark:text-white mb-4 border-b border-gray-200 dark:border-gray-800 pb-4">Order Summary</h3>
+<div class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+<div class="flex justify-between">
+<span>Subtotal</span>
+<span>$330.00</span>
+</div>
+<div class="flex justify-between">
+<span>Estimated Shipping</span>
+<span>$5.00</span>
+</div>
+<div class="flex justify-between">
+<span>Tax</span>
+<span>Calculated at checkout</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
+<div class="flex justify-between font-bold text-base text-[#111418] dark:text-white">
+<span>Total</span>
+<span>$335.00</span>
+</div>
+</div>
+<button class="mt-6 w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg transition-colors">
+Proceed to Checkout
+</button>
+<div class="mt-4 flex items-center justify-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined !text-base">lock</span>
+<span>Secure Checkout</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
